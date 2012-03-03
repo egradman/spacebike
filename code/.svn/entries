@@ -1,0 +1,41 @@
+8
+
+dir
+225
+svn://localhost/games/asteroids/code
+svn://localhost
+
+
+
+2009-01-14T06:58:01.550068Z
+225
+guest
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e1c36851-3d41-4b2f-bb4a-2ff778579d97
+
+Ess.jar
+file
+
+
+
+
+2009-01-24T00:46:26.000000Z
+2d432d5747caf10e787d420ac0f98900
+2009-01-14T06:58:01.550068Z
+225
+guest
+has-props
+

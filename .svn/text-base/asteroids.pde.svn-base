@@ -1,0 +1,65 @@
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.util.List;
+import java.util.ArrayList;
+
+import krister.Ess.*;
+
+// Globals for Debugging
+boolean noSound = false;	// Turn off sounds
+boolean noHit = false;		// Turn off hit testing 
+
+/**
+ * TODO
+ * o Character Generator for Asteroid Font
+ * o High Scores
+ */
+void setup() {
+	size(500, 375);   // blog
+	//size(640, 480); // decent
+	//size(800, 675); // nice
+	frameRate(30);
+	smooth();
+
+	fontA = loadFont("CourierNew36.vlw");
+    
+	// Start sound
+	Ess.start(this); // Start Ess
+	sounds = new Sounds();
+
+	game = new Game();
+	game.init(true);
+	
+	println("Game Started");
+	println("Size = (" + width + ", " + height + ")");
+}
+
+void draw() {
+	try {
+		game.draw();
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+}
+
+void keyPressed() {
+	game.controller.keyPressed();
+}
+
+void keyReleased() {
+	game.controller.keyReleased();
+}
+
+void mousePressed() {
+	game.controller.mousePressed();
+}
+
+Game game = null;
+PFont fontA;
+Sounds sounds;
+
+public final int EXPLODE_BIG = 2;
+public final int EXPLODE_MEDIUM = 1;
+public final int EXPLODE_SMALL = 0;
+

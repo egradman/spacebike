@@ -1,0 +1,1 @@
+Provided as is with no warranty.  Have fun, I wrote this really fast and didn't document it but I hope it helps you understand Processing a bit better. 
